@@ -33,7 +33,7 @@ class Sentence {
   }
 
   // Add a method to the Sentence class called stats. It will return an object with a key for each word in your sentence and a value for how many times the word appears. Example: For 'foo bar bar' it would return an object with keys, 'foo' and 'bar' with values 1 and 2 respectively.
-  stat() {
+  stats() {
     let strObject = {};
     let lowStr = this.data.toLowerCase();
     let splitStr = lowStr.split(" ");
@@ -58,4 +58,4 @@ console.log(item.data);
 item.wordCounter();
 console.log(item.hasLetter("h"));
 console.log(item.letterCounter("t"));
-console.log(item.stat());
+console.log(item.stats());
